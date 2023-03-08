@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Macbeth Game</title>
+    <style>
+      .container {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+      }
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+      
+    </style>
+    <link rel="stylesheet" href="game.css">
+  </head>
+  <body>
+    <script src="game.js"></script>
+    <div id="start" class="container">
+      <h1>Welcome to the Macbeth Game</h1>
+      <button onclick="startGame()">Start</button>
+      
+    </div>
+    <div id="game" class="container" style="display:none;">
+      <h2>Act 1: The Witches' Prophecy</h2>
+      <p>You are Macbeth, a brave and loyal soldier in King Duncan's army. As you and your friend Banquo ride home from a battle, you encounter three witches who make a startling prophecy. They hail you as Thane of Glamis and Thane of Cawdor, and declare that you will become king one day. Banquo is skeptical, but you can't shake the feeling that there might be some truth to the witches' words.</p>
+      <p>What do you do?</p>
+      <button onclick="goLeft()">Believe the Witches</button>
+      <button onclick="goRight()">Dismiss the Witches</button>
+      <img src="wicth.gif" height="200" >
+
+    </div>
+    <div id="page2" class="container" style="display:none;">
+      <h2>Act 2: The Murder of King Duncan</h2>
+      <p>You emerge from the forest onto a rocky beach. Ahead of you, you see a castle perched on a cliff. As you approach, you hear the sound of battle. What do you do?</p>
+      <button onclick="fight()">Join the Battle</button>
+      <button onclick="sneak()">Sneak into the Castle</button>
+      <img src="Sound of fighting.gif" height="300" width="300">
+
+    </div>
+    <div id="page3" class="container" style="display:none;">
+      <h2>Act 3: The Coronation</h2>
+      <p>You have successfully killed King Duncan and seized the throne. You are now the king of Scotland, but you know that your position is not secure. You must eliminate any potential threats to your power.</p>
+      <p>What do you do?</p>
+      <button onclick="killBanquo()">Order the Murder of Banquo</button>
+      <button onclick="frameMalcolm()">Frame Malcolm for Treason</button>
+    </div>
+    <div id="page4" class="container" style="display:none;">
+      <h2>Act 4: The Apparitions</h2>
+      <p>You are tormented by guilt and paranoia. You seek out the witches again, hoping for some guidance.</p>
+      <p>They show you three apparitions:</p>
+      <button onclick="apparitionOne()">Apparition 1</button>
+      <button onclick="apparitionTwo()">Apparition 2</button>
+      <button onclick="apparitionThree()">Apparition 3</button>
+      <img src="apparition.webp" height="300" width="200" >
+
+    </div>
+    <div id="page5" class="container" style="display:none;">
+ 
+      <!DOCTYPE html>
+<html>
+  <head>
+    <title>Macbeth Game</title>
+    <style>
+      body {
+        background-color: #f7f7f7;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+
+      h1 {
+        color: #5d5d5d;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #008cba;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #006b9a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Macbeth Game</h1>
+    <h2>Act 5: The Battle</h2>
+    <p>Your enemies have amassed an army and are marching on your castle. You must defend your kingdom and your throne.</p>
+    <p>What do you do?</p>
+    <a href="#" class="button" onclick="defend()">Defend your castle</a>
+    <a href="#" class="button" onclick="surrender()">Surrender to your enemies</a>
+
+    <script>
+      function defend() {
+        alert("You bravely defended your castle and defeated your enemies. You have secured your throne and your legacy.");
+      }
+
+      function surrender() {
+        alert("You surrendered to your enemies and were dethroned. Your legacy is forever tainted by your cowardice.");
+      }
+    </script>
+
+    <!-- Add a new scene here -->
+    <h2>Act 6: The Aftermath</h2>
+    <p>Now that the battle is over, you must pick up the pieces and rebuild your kingdom. What is your first step?</p>
+    <a href="#" class="button" onclick="rebuild()">Rebuild your castle</a>
+
+    <script>
+      function rebuild() {
+        alert("You have successfully rebuilt your castle and restored your kingdom. Your legacy will be remembered for generations to come.");
+      }
+    </script>
+
+    <!-- Add another new scene here -->
+    <h2>Act 7: The New Threat</h2>
+    <p>A new threat has emerged to your kingdom. A powerful sorcerer has arrived and is wreaking havoc. What do you do?</p>
+    <a href="#" class="button" onclick="confront()">Confront the sorcerer</a>
+    <a href="#" class="button" onclick="flee()">Flee the kingdom</a>
+
+    <script>
+      function confront() {
+        alert("You bravely confronted the sorcerer and vanquished him with your strength and courage. Your kingdom is safe once again.");
+      }
+
+      function flee() {
+        alert("You fled the kingdom in fear of the sorcerer. Your legacy is forever tarnished by your cowardice.");
+      }
+    </script>
+  </body>
+</html>
